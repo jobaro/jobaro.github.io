@@ -10837,6 +10837,15 @@ div.btn-default.rounded-player.sm-size {
   justify-content: center;
   margin: -5px;
 }
+.social-defaultleft {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: left;
+  margin: -5px;
+}
 .social-default li {
   margin: 5px;
 }
