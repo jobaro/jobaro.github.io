@@ -1,10 +1,10 @@
 (function (window, document, $, undefined) {
     'use strict';
 
-    var doobJs = {
+    var baenaJs = {
         i: function (e) {
-            doobJs.d();
-            doobJs.methods();
+            baenaJs.d();
+            baenaJs.methods();
         },
 
         d: function (e) {
@@ -15,24 +15,24 @@
         },
         
         methods: function (e) {
-            doobJs.smothScroll();
-            doobJs.backToTopInit();
-            doobJs.backToTopInit();
-            doobJs.counterUpActivation();
-            doobJs.wowActivation();
-            doobJs.headerTopActivation();
-            doobJs.headerSticky();
-            doobJs.salActive();
-            doobJs.popupMobileMenu();
-            doobJs.masonryActivation();
-            doobJs.magnigyPopup();
-            doobJs.lightBoxJs();
-            doobJs.slickSliderActivation();
-            doobJs.radialProgress();
-            doobJs.contactForm();
-            doobJs.menuCurrentLink();
-            doobJs.onePageNav();
-            doobJs.darkLight();
+            baenaJs.smothScroll();
+            baenaJs.backToTopInit();
+            baenaJs.backToTopInit();
+            baenaJs.counterUpActivation();
+            baenaJs.wowActivation();
+            baenaJs.headerTopActivation();
+            baenaJs.headerSticky();
+            baenaJs.salActive();
+            baenaJs.popupMobileMenu();
+            baenaJs.masonryActivation();
+            baenaJs.magnigyPopup();
+            baenaJs.lightBoxJs();
+            baenaJs.slickSliderActivation();
+            baenaJs.radialProgress();
+            baenaJs.contactForm();
+            baenaJs.menuCurrentLink();
+            baenaJs.onePageNav();
+            baenaJs.darkLight();
         },
 
         menuCurrentLink: function () {
@@ -446,7 +446,7 @@
             }
         },
     }
-    doobJs.i();
+    baenaJs.i();
 
 })(window, document, jQuery)
 
