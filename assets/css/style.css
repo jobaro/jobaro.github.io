@@ -535,6 +535,7 @@ blockquote b {
 }
 
 html {
+  scroll-behavior: smooth;
   overflow: hidden;
   overflow-y: auto;
   margin: 0;
@@ -9683,7 +9684,7 @@ xclip
 ------------------------*/
 @media (prefers-reduced-motion: no-preference) {
   :root {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
   }
 }
 .mainmenu-nav.onepagenav .mainmenu > li > a {
