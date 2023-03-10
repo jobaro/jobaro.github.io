@@ -38,6 +38,18 @@
     <link rel="stylesheet" href="assets/css/plugins/lightbox.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<script>
+    var nativeShare = function() {
+       if (navigator.share) { 
+          navigator.share({
+             title: "¿Qué es la informática forense y cuándo la necesitaremos?",
+             text: "La informática forense recopila y analiza datos digitales de dispositivos electrónicos o la nube. Es importante ante problemas que involucren datos digitales, y los casos pueden incluir revelación de secretos y estafas informáticas",
+             url: "https%3A//seguridadforense.com/que-es-informatica-forense.html", 
+          }) 
+       }
+       return false;
+    }
+    </script>
 
 <body>
     <main class="page-wrapper">
@@ -243,6 +255,9 @@
                                             href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//seguridadforense.com/que-es-informatica-forense.html">
                                             <i class="feather-linkedin"></i>
                                         </a>
+                                    </li>
+                                    <li data-sal="slide-up" data-sal-duration="400" data-sal-delay="500">
+                                        <a onclick="return nativeShare();"><i class="feather-share"></i></a>
                                     </li>
                                 </ul>
 

@@ -38,6 +38,18 @@
     <link rel="stylesheet" href="assets/css/plugins/lightbox.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<script>
+    var nativeShare = function() {
+       if (navigator.share) { 
+          navigator.share({
+             title: "Los mensajes de Whatsapp no se acreditan con un acta notarial",
+             text: "La validez de las conversaciones de WhatsApp es crucial en los juzgados, pero se pueden falsificar fácilmente. Se recomienda demostrar la autenticidad de los mensajes a través de informes periciales informáticos para evitar problemas legales. Esto se aplica también a otros documentos digitales",
+             url: "https%3A//seguridadforense.com/mensajes-whatsapp.html", 
+          }) 
+       }
+       return false;
+    }
+    </script>
 
 <body>
     <main class="page-wrapper">
@@ -205,6 +217,9 @@
                                             href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//seguridadforense.com/mensajes-whatsapp.html">
                                             <i class="feather-linkedin"></i>
                                         </a>
+                                    </li>
+                                    <li data-sal="slide-up" data-sal-duration="400" data-sal-delay="500">
+                                        <a onclick="return nativeShare();"><i class="feather-share"></i></a>
                                     </li>
                                 </ul>
 
