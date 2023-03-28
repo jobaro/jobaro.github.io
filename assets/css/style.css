@@ -89,9 +89,9 @@
   --color-primary-light: #1062a1;
   --color-primary-lightest: #1062a1;
   --color-secondary: #6898bd;
-  --color-tertiary: #0b436e;
-  --color-tertiary-alt: #0b436e;
-  --color-pink: #0b436e;
+  --color-tertiary: #25448b; /*0b436e*/
+  --color-tertiary-alt: #25448b;
+  --color-pink: #25448b;
   --color-light-green: #36C6F0;
   --color-primary-darker: #011827;
   --color-tertiary-darker: #150b40;
@@ -7687,7 +7687,7 @@ textarea:-ms-input-placeholder {
 /* Theme Gradient */
 .theme-gradient, .counter-style-1 .count-number {
   /*background: linear-gradient(95deg, var(--color-primary) 15%, var(--color-tertiary) 45%, var(--color-pink) 75%, var(--color-secondary) 100%) 98%/200% 100%;*/
-  background: linear-gradient(95deg, #0b436e 15%, #81a2bd 45%, #1062a1 75%, #1062a1 100%) 98%/200% 100%;
+  background: linear-gradient(95deg, #25448b 15%, #81a2bd 45%, #1062a1 75%, #1062a1 100%) 98%/200% 100%;
   text-transform: capitalize;
   -webkit-background-clip: text;
   background-clip: text;
