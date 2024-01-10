@@ -1,0 +1,5 @@
+# robots.txt generado por atecnis.com
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://seguridadforense.com/sitemap.xml
