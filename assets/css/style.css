@@ -7688,7 +7688,7 @@ textarea:-ms-input-placeholder {
 .theme-gradient, .counter-style-1 .count-number {
   /*background: linear-gradient(95deg, var(--color-primary) 15%, var(--color-tertiary) 45%, var(--color-pink) 75%, var(--color-secondary) 100%) 98%/200% 100%;*/
   background: linear-gradient(95deg, #25448b 15%, #81a2bd 45%, #1062a1 75%, #1062a1 100%) 98%/200% 100%;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
