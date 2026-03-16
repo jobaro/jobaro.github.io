@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-style-mode" content="0"> <!-- 0 == light, 1 == dark -->
+    <meta name="author" content="José Baena Roca">
+    <meta name='language' content='ES'>
+    <meta name='revised' content='Sunday, March 16th, 2025'>
+    <meta name='date' content='Mar. 16, 2025'>
+    <meta name='search_date' content='2025-03-16'>
+    <meta name="title" content="Análisis forense de una estafa: cuando la única evidencia son dos capturas">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Análisis forense de una estafa bancaria: el guión del estafador estaba perfectamente construido. De dos capturas de pantalla y el registro de SMS salió todo el análisis.">
+    <meta name="keywords" content="estafa bancaria, phishing, análisis forense, perito informático, ciberseguridad, fraudes bancarios">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="20 days">
+
+    <meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Análisis forense de una estafa: cuando la única evidencia son dos capturas" />
+	<meta property="og:description" content="El guión del estafador estaba perfectamente construido. De dos capturas de pantalla y el registro de SMS salió todo el análisis forense." />
+	<meta property="og:url" content="https://seguridadforense.com/estafa-bancaria.html" />
+	<meta property="og:site_name" content="Perito Informático Córdoba" />
+    <meta property="og:image" content="https://seguridadforense.com/assets/images/blog/Estafa bancaria.png" />
+
+    <meta property="og:url" content="permalink" />
+    <link rel="canonical" href="https://seguridadforense.com/estafa-bancaria.html">
+
+    <title>Análisis forense de una estafa | Seguridad Forense</title>
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <!-- CSS ============================================ -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/animation.css">
+    <link rel="stylesheet" href="assets/css/plugins/feature.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnify.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/plugins/lightbox.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<script>
+    var nativeShare = function () {
+        if (navigator.share) {
+            navigator.share({
+                title: "Análisis forense de una estafa: cuando la única evidencia son dos capturas",
+                text: "El guión estaba perfectamente construido. De dos capturas y el registro de SMS salió todo el análisis forense.",
+                url: "https://seguridadforense.com/estafa-bancaria.html",
+            })
+        }
+        return false;
+    }
+</script>
+<body>
+    <main class="page-wrapper">
+        <header class="rainbow-header header-default header-left-align header-not-transparent header-sticky">
+            <div class="container position-relative">
+                <div class="row align-items-center">
+                    <div class="col-lg-9 col-md-6 col-4 position-static">
+                        <div class="header-left d-flex">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img class="logo-light" src="assets/images/logo/logo.png" alt="Corporate Logo">
+                                    <img class="logo-dark" src="assets/images/logo/logo-dark.png" alt="Corporate Logo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-8">
+                        <div class="header-right">
+                            <div class="header-btn">
+                                <a class="btn-default btn-small round" href="javascript: history.go(-1)">
+                                    VOLVER</a>
+                            </div>
+
+                            <!-- Start Mobile-Menu-Bar -->
+                            <div class="mobile-menu-bar ml--5 d-block d-lg-none">
+                                <div class="hamberger">
+                                    <button class="hamberger-button">
+                                        <i class="feather-menu"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="popup-mobile-menu">
+            <div class="inner">
+                <div class="header-top">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img class="logo-light" src="assets/images/logo/logo.png" alt="Corporate Logo">
+                            <img class="logo-dark" src="assets/images/logo/logo-dark.png" alt="Corporate Logo">
+                        </a>
+                    </div>
+                    <div class="close-menu">
+                        <button class="close-button">
+                            <i class="feather-x"></i>
+                        </button>
+                    </div>
+                </div>
+                <ul class="mainmenu">
+                    <li class="with-megamenu position-relative"><a
+                            href="https://seguridadforense.com/index.html">Volver</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <span>
+            <a href="tel:+34613041171"
+                style="background-color: white; position: fixed; width: 60px; height: 60px; bottom: 75px; left: 15px; border-radius: 50px; text-align: center; box-shadow: 2px 2px 3px #999; z-index: 9999999;"
+                target="_blank">
+                <img src="assets/images/icons/phone.svg">
+            </a>
+        </span>
+        <a href="https://wa.me/+34613041171"
+            style="background-color: white; position: fixed; width: 60px; height: 60px; bottom: 10px; left: 15px; border-radius: 50px; text-align: center; box-shadow: 2px 2px 3px #999; z-index: 9999999;"
+            target="_blank">
+            <img src="assets/images/icons/whatsapp_logo.svg">
+        </a>
+
+        <!-- Start Theme Style  -->
+        <div>
+            <div class="rainbow-gradient-circle"></div>
+            <div class="rainbow-gradient-circle theme-pink"></div>
+        </div>
+        <!-- End Theme Style  -->
+
+
+
+
+        <!-- Start Advance Pricing Area  -->
+        <div class="rainbow-blog-details-area">
+            <div class="post-page-banner rainbow-section-gapTop">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="content text-center">
+                                <div class="page-title text-align">
+                                    <h2 class="theme-gradient">Análisis forense de una estafa: cuando la única evidencia son dos capturas</h2>
+                                </div>
+                                <ul class="rainbow-meta-list">
+                                    <li>
+                                        <i class="feather-user"></i>
+                                        <a href="#">José Baena Roca</a>
+                                    </li>
+                                    <li>
+                                        <i class="feather-calendar"></i>
+                                        16 Mar 2025
+                                    </li>
+                                </ul>
+                                <div class="thumbnail alignwide mt--60"><img class="w-70 radius"
+                                        style="max-width: 70%; height: auto;" src="assets/images/blog/Estafa bancaria.png"
+                                        alt="Análisis forense de una estafa bancaria">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-details-content pt--60 rainbow-section-gapBottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="content" style="font-size: medium; text-align: justify;">
+
+                                <p><b>El guión estaba perfectamente construido.</b></p>
+
+                                <p>
+                                    Todo empezó con un SMS que llegó al mismo hilo que los mensajes legítimos de su banco. Mismo remitente, mismo aspecto. El mensaje decía que su cuenta quedaría bloqueada y que debía verificar sus datos en un enlace.
+                                </p>
+
+                                <p>
+                                    Antes de que pudiera reaccionar, llegó un segundo SMS. Le comunicaban que habían abierto un caso de asistencia para ella, que le habían asignado un gestor con nombre y apellido, y que se pondría en contacto en los próximos minutos.
+                                </p>
+
+                                <p>
+                                    El teléfono sonó casi de inmediato.
+                                </p>
+
+                                <p>
+                                    Pero entre el primer SMS y la llamada, llegaron dos mensajes más que resultaron clave para el engaño: le informaban de que se habían detectado dos transferencias fraudulentas de pequeño importe en su cuenta y que habían sido canceladas con éxito. El banco ya estaba actuando. Ya la estaba protegiendo.
+                                </p>
+
+                                <p>
+                                    Cuando llegó la llamada, la afectada no recibió a un desconocido. Recibió a alguien que, según lo que acababa de leer, <b>ya había empezado a trabajar por ella.</b>
+                                </p>
+
+                                <h4 style="margin-top: 30px;">Durante la llamada, el guión se volvió más sofisticado.</h4>
+
+                                <p>
+                                    El "gestor" le explicó que su cuenta había sido comprometida y que necesitaban su colaboración para completar el proceso de cancelación de las operaciones fraudulentas. Que le llegarían unos códigos al móvil. Que debía leérselos para que el departamento de ciberseguridad pudiera anular las transferencias.
+                                </p>
+
+                                <p>
+                                    Los códigos llegaron. Eran reales. Los enviaba el banco de verdad.
+                                </p>
+
+                                <p>
+                                    Ella los leyó en voz alta.
+                                </p>
+
+                                <p>
+                                    Y aquí está la clave del engaño: <b>cada vez que daba un código, llegaba un nuevo SMS al mismo hilo.</b> El mensaje le confirmaba que una transferencia había sido recibida con éxito en su cuenta y que en breve tendría el dinero disponible. El dinero no salía: llegaba. Eso era lo que le decían. Eso era lo que leía.
+                                </p>
+
+                                <p>
+                                    Mientras la afectada creía estar recuperando su dinero, <b>sus ahorros salían hacia cuentas que nunca vería.</b>
+                                </p>
+
+                                <h4 style="margin-top: 30px;">El remate.</h4>
+
+                                <p>
+                                    Cerca del final, llegó un mensaje que le pedía expresamente que no abriera la aplicación del banco para no interferir en las anulaciones que el departamento de ciberseguridad estaba realizando.
+                                </p>
+
+                                <p>
+                                    Y el último SMS del hilo, el que cerró la operación, le confirmaba que todo había salido bien. Le mostraba el saldo de su cuenta: el saldo exacto, real, que tenía antes de que empezara todo. Le decía que en breve lo tendría disponible correctamente.
+                                </p>
+
+                                <p>
+                                    <b>Ese dato, el saldo exacto, no es público. No se adivina. Alguien lo tenía antes de hacer la llamada.</b>
+                                </p>
+
+                                <p>
+                                    La afectada colgó el teléfono creyendo que su banco la había salvado de un fraude.
+                                </p>
+
+                                <p>
+                                    Esa misma noche, al contárselo a su hija por WhatsApp, envió dos capturas de pantalla. Sin saber que eran la única evidencia que iba a sobrevivir. Porque poco después, en el estado de pánico que el ataque había dejado, reseteó su propio teléfono.
+                                </p>
+
+                                <p>
+                                    <b>De esas dos imágenes, y del registro oficial de SMS aportado por el banco, salió todo el análisis forense.</b>
+                                </p>
+
+                                <ul class="social-icon social-default with-gradient">
+                                    <li data-sal="slide-up" data-sal-duration="400" data-sal-delay="200"><a
+                                            href="https://www.facebook.com/sharer/sharer.php?u=https%3A//seguridadforense.com/estafa-bancaria.html">
+                                            <i class="feather-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li data-sal="slide-up" data-sal-duration="400" data-sal-delay="300"><a
+                                            href="https://twitter.com/intent/tweet?text=https%3A//seguridadforense.com/estafa-bancaria.html">
+                                            <i class="feather-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li data-sal="slide-up" data-sal-duration="400" data-sal-delay="500"><a
+                                            href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//seguridadforense.com/estafa-bancaria.html">
+                                            <i class="feather-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li data-sal="slide-up" data-sal-duration="400" data-sal-delay="500">
+                                        <a onclick="return nativeShare();"><i class="feather-share"></i></a>
+                                    </li>
+
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="rainbow-footer footer-style-default variation-two">
+            <div class="rainbow-callto-action clltoaction-style-default style-7">
+                <div class="container">
+                    <div class="row row--0 align-items-center content-wrapper">
+                        <div class="col-lg-8 col-md-8">
+                            <div class="inner">
+                                <div class="content text-left">
+                                    <div class="logo">
+                                        <a href="index.html">
+                                            <img class="logo-light" src="assets/images/logo/logo.png"
+                                                alt="Corporate Logo">
+                                            <img class="logo-dark" src="assets/images/logo/logo-dark.png"
+                                                alt="Corporate Logo">
+                                        </a>
+                                    </div>
+                                    <p class="subtitle" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150"
+                                        style="font-size: medium; text-align: justify;">Si quiere consultar su caso no
+                                        dude en contactar conmigo,
+                                        sin compromiso y con total confidencialidad</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150">
+                            <div class="call-to-btn text-left mt_sm--20 text-lg-right">
+                                <a class="btn-default btn-small round" target="_blank" href="contact.html">
+                                    CONTACTO</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer Area  -->
+        <!-- Start Copy Right Area  -->
+        <div class="copyright-area copyright-style-one">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-8 col-sm-12 col-12">
+                        <div class="copyright-left">
+                            <ul class="ft-menu link-hover">
+                                <li>
+                                    <a href="privacy-policy.html">Política de privacidad</a>
+                                </li>
+                                <li>
+                                    <a href="aviso-legal.html">Aviso legal</a>
+                                </li>
+                                <li>
+                                    <a href="politica-cookies.html">Política de cookies</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4 col-sm-12 col-12">
+                        <div class="copyright-right text-center text-lg-end">
+                            <p class="copyright-text">© Seguridad Forense</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Copy Right Area  -->
+
+    </main>
+
+    <!-- All Scripts  -->
+    <!-- Start Top To Bottom Area  -->
+    <div class="rainbow-back-top">
+        <i class="feather-arrow-up"></i>
+    </div>
+    <!-- End Top To Bottom Area  -->
+    <!-- JS
+============================================ -->
+    <script src="assets/js/vendor/modernizr.min.js"></script>
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="assets/js/vendor/waypoint.min.js"></script>
+    <script src="assets/js/vendor/wow.min.js"></script>
+    <script src="assets/js/vendor/counterup.min.js"></script>
+    <script src="assets/js/vendor/feather.min.js"></script>
+    <script src="assets/js/vendor/sal.min.js"></script>
+    <script src="assets/js/vendor/masonry.js"></script>
+    <script src="assets/js/vendor/imageloaded.js"></script>
+    <script src="assets/js/vendor/magnify.min.js"></script>
+    <script src="assets/js/vendor/lightbox.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/easypie.js"></script>
+    <script src="assets/js/vendor/text-type.js"></script>
+    <script src="assets/js/vendor/jquery.style.swicher.js"></script>
+    <script src="assets/js/vendor/js.cookie.js"></script>
+    <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
