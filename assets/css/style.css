@@ -16057,13 +16057,14 @@ body.active-light-mode .slider-area.bg-transparent .inner button.btn-default.btn
 .service.gallery-style .inner {
   display: flex; flex-direction: column; height: 100%;
 }
+.service.gallery-style .inner .content { order: 2; flex: 1 0 auto; }
+.service.gallery-style .inner .content .title { min-height: 60px; }
+.service.gallery-style .inner .content p.description { min-height: 60px; margin-bottom: 0; }
 .service.gallery-style .inner .image {
   height: 120px; overflow: hidden; display: flex;
-  align-items: center; justify-content: center; flex-shrink: 0;
+  align-items: center; justify-content: center; flex-shrink: 0; order: 1;
 }
 .service.gallery-style .inner .image object { max-height: 120px; width: 100%; }
-.service.gallery-style .content .title { min-height: 50px; }
-.service.gallery-style .content p.description { min-height: 60px; margin-bottom: 0; }
 
 /* Blog cards uniform height */
 .blog-area .row.row--15 { align-items: stretch; }
