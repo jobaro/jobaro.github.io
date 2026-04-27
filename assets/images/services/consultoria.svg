@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1600 992" style="enable-background:new 0 0 1600 992;" xml:space="preserve">
+	<defs>
+		<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0%" style="stop-color:rgb(208,229,249);stop-opacity:1" />
+			<stop offset="100%" style="stop-color:rgb(153,192,229);stop-opacity:1" />
+		</linearGradient>
+		<linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0%" style="stop-color:rgb(80,145,195);stop-opacity:1" />
+			<stop offset="100%" style="stop-color:rgb(11,67,110);stop-opacity:1" />
+		</linearGradient>
+	</defs>
+<style type="text/css">
+	.st0{fill:url(#grad1);}
+	.st1{fill:url(#grad2);}
+	.st2{fill:#ECF0F1;}
+</style>
+<!-- Person silhouette (head + shoulders) -->
+<circle class="st1" cx="640" cy="310" r="100"/>
+<path class="st1" d="M480,620c0-88.4,71.6-160,160-160s160,71.6,160,160v60H480V620z"/>
+<!-- Monitor -->
+<g>
+	<rect x="860" y="260" class="st0" width="400" height="280" rx="20"/>
+	<rect x="880" y="280" class="st2" width="360" height="220" rx="10"/>
+	<!-- Screen content lines -->
+	<rect x="900" y="310" class="st1" width="200" height="12" rx="4"/>
+	<rect x="900" y="340" class="st1" width="280" height="12" rx="4"/>
+	<rect x="900" y="370" class="st1" width="160" height="12" rx="4"/>
+	<rect x="900" y="410" class="st1" width="240" height="12" rx="4"/>
+	<rect x="900" y="440" class="st1" width="120" height="12" rx="4"/>
+	<!-- Monitor stand -->
+	<rect x="1020" y="540" class="st1" width="40" height="40"/>
+	<rect x="960" y="580" class="st1" width="160" height="20" rx="8"/>
+</g>
+<!-- Lightbulb (consulting/advice symbol) -->
+<g>
+	<circle class="st2" cx="760" cy="200" r="50"/>
+	<path class="st1" d="M760,120c-44.2,0-80,35.8-80,80c0,30,16.6,56,41,69.6V300h78v-30.4c24.4-13.6,41-39.6,41-69.6
+		C840,155.8,804.2,120,760,120z M760,160c22,0,40,18,40,40s-18,40-40,40s-40-18-40-40S738,160,760,160z"/>
+	<rect x="735" y="300" class="st1" width="50" height="12" rx="4"/>
+	<rect x="740" y="318" class="st1" width="40" height="8" rx="3"/>
+	<!-- Rays around bulb -->
+	<line class="st1" x1="760" y1="80" x2="760" y2="100" stroke-width="8"/>
+	<line class="st1" x1="688" y1="100" x2="700" y2="118" stroke-width="8"/>
+	<line class="st1" x1="832" y1="100" x2="820" y2="118" stroke-width="8"/>
+	<line class="st1" x1="668" y1="172" x2="688" y2="172" stroke-width="8"/>
+	<line class="st1" x1="852" y1="172" x2="832" y2="172" stroke-width="8"/>
+</g>
+</svg>

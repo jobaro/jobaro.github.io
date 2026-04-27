@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1600 992" style="enable-background:new 0 0 1600 992;" xml:space="preserve">
+<defs>
+<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(208,229,249);stop-opacity:1" /><stop offset="100%" style="stop-color:rgb(153,192,229);stop-opacity:1" /></linearGradient>
+<linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(80,145,195);stop-opacity:1" /><stop offset="100%" style="stop-color:rgb(11,67,110);stop-opacity:1" /></linearGradient>
+</defs>
+<style type="text/css">.sg0{fill:url(#grad2);}.sg1{fill:#95A5A6;}.sg2{fill:#ECF0F1;}.sg3{fill:url(#grad1);}</style>
+
+<!-- Cabeza con antifaz de ladrón -->
+<circle class="sg0" cx="480" cy="330" r="130"/>
+
+<!-- Antifaz de ladrón (máscara sobre los ojos) -->
+<path d="M350,310 Q350,270 400,260 Q440,252 480,255 Q520,252 560,260 Q610,270 610,310 L600,320 Q580,295 540,290 Q500,285 480,288 Q460,285 420,290 Q380,295 360,320 Z" fill="#1a1a2e"/>
+
+<!-- Ojos visibles a través del antifaz -->
+<ellipse cx="430" cy="305" rx="30" ry="20" fill="#ECF0F1"/>
+<ellipse cx="530" cy="305" rx="30" ry="20" fill="#ECF0F1"/>
+<!-- Pupilas -->
+<ellipse cx="438" cy="305" rx="12" ry="14" fill="#0b436e"/>
+<ellipse cx="538" cy="305" rx="12" ry="14" fill="#0b436e"/>
+
+<!-- Cejas fruncidas (aspecto sospechoso) -->
+<path d="M395,280 L430,275 Q435,278 430,280 L395,286 Z" fill="#0b436e"/>
+<path d="M565,280 L530,275 Q525,278 530,280 L565,286 Z" fill="#0b436e"/>
+
+<!-- Sonrisa maliciosa -->
+<path d="M445,355 Q480,380 515,355" fill="none" stroke="#0b436e" stroke-width="5" stroke-linecap="round"/>
+
+<!-- Cuerpo / Torso (brazos extendidos hacia la derecha) -->
+<path class="sg0" d="M350,460c0-132.6,58.2-240,130-240s130,107.4,130,240v120H350V460z"/>
+
+<!-- Brazo derecho extendido hacia el monitor (robando datos) -->
+<path class="sg0" d="M610,440 Q700,420 800,400 Q880,385 950,395 L960,430 Q890,420 810,435 Q720,450 640,470 Z"/>
+
+<!-- Mano derecha en el monitor -->
+<circle cx="960" cy="412" r="30" class="sg0"/>
+
+<!-- Monitor mostrando datos robados -->
+<rect x="900" y="460" class="sg0" width="500" height="340" rx="18"/>
+<rect x="920" y="480" class="sg2" width="460" height="270" rx="10"/>
+
+<!-- Líneas de texto en el monitor -->
+<rect x="945" y="505" class="sg3" width="300" height="10" rx="4"/>
+<rect x="945" y="530" class="sg3" width="240" height="10" rx="4"/>
+<rect x="945" y="555" class="sg3" width="280" height="10" rx="4"/>
+<rect x="945" y="580" class="sg1" width="320" height="10" rx="4"/>
+<rect x="945" y="605" class="sg1" width="200" height="10" rx="4"/>
+<rect x="945" y="630" class="sg1" width="260" height="10" rx="4"/>
+<rect x="945" y="655" class="sg1" width="160" height="10" rx="4"/>
+
+<!-- Base del monitor -->
+<rect x="1120" y="800" class="sg0" width="60" height="50"/>
+<rect x="1060" y="850" class="sg0" width="180" height="22" rx="8"/>
+
+<!-- Flechas de datos saliendo del monitor (fuga de información) -->
+<path d="M1380,500 L1420,480 L1400,480 L1400,450 L1360,450 L1360,480 L1340,480 Z" class="sg1"/>
+<path d="M1380,570 L1420,550 L1400,550 L1400,520 L1360,520 L1360,550 L1340,550 Z" class="sg1"/>
+<path d="M1380,640 L1420,620 L1400,620 L1400,590 L1360,590 L1360,620 L1340,620 Z" class="sg1"/>
+
+<!-- Sobre/documento robado saliendo -->
+<rect x="1390" y="670" class="sg0" width="80" height="60" rx="6"/>
+<polyline points="1390,670 1430,700 1470,670" fill="none" stroke="#ECF0F1" stroke-width="3"/>
+
+<!-- Líneas punteadas de datos fluyendo -->
+<line x1="1400" y1="450" x2="1480" y2="420" stroke="#95A5A6" stroke-width="3" stroke-dasharray="8,6"/>
+<line x1="1400" y1="520" x2="1480" y2="490" stroke="#95A5A6" stroke-width="3" stroke-dasharray="8,6"/>
+<line x1="1400" y1="590" x2="1480" y2="560" stroke="#95A5A6" stroke-width="3" stroke-dasharray="8,6"/>
+
+<!-- USB stick colgando del bolsillo -->
+<rect x="370" y="540" class="sg0" width="50" height="100" rx="8" transform="rotate(-15, 395, 590)"/>
+<rect x="365" y="555" class="sg2" width="35" height="25" rx="4" transform="rotate(-15, 382, 567)"/>
+
+</svg>

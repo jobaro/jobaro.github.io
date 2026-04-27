@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1600 600" style="enable-background:new 0 0 1600 600;" xml:space="preserve">
+<defs>
+<linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:rgb(11,67,110);stop-opacity:1" /><stop offset="100%" style="stop-color:rgb(80,145,195);stop-opacity:1" /></linearGradient>
+<linearGradient id="usb1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(153,192,229);stop-opacity:1" /><stop offset="100%" style="stop-color:rgb(208,229,249);stop-opacity:1" /></linearGradient>
+<linearGradient id="glow1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(255,200,50);stop-opacity:0.8" /><stop offset="100%" style="stop-color:rgb(255,160,30);stop-opacity:0.9" /></linearGradient>
+</defs>
+<!-- Background -->
+<rect width="1600" height="600" fill="url(#bg1)" rx="0"/>
+<!-- Grid pattern (subtle) -->
+<g opacity="0.06">
+<line x1="0" y1="100" x2="1600" y2="100" stroke="white" stroke-width="1"/>
+<line x1="0" y1="200" x2="1600" y2="200" stroke="white" stroke-width="1"/>
+<line x1="0" y1="300" x2="1600" y2="300" stroke="white" stroke-width="1"/>
+<line x1="0" y1="400" x2="1600" y2="400" stroke="white" stroke-width="1"/>
+<line x1="0" y1="500" x2="1600" y2="500" stroke="white" stroke-width="1"/>
+<line x1="200" y1="0" x2="200" y2="600" stroke="white" stroke-width="1"/>
+<line x1="400" y1="0" x2="400" y2="600" stroke="white" stroke-width="1"/>
+<line x1="600" y1="0" x2="600" y2="600" stroke="white" stroke-width="1"/>
+<line x1="800" y1="0" x2="800" y2="600" stroke="white" stroke-width="1"/>
+<line x1="1000" y1="0" x2="1000" y2="600" stroke="white" stroke-width="1"/>
+<line x1="1200" y1="0" x2="1200" y2="600" stroke="white" stroke-width="1"/>
+<line x1="1400" y1="0" x2="1400" y2="600" stroke="white" stroke-width="1"/>
+</g>
+<!-- Laptop (left side) -->
+<g transform="translate(100,150)">
+<!-- Laptop screen -->
+<rect x="0" y="0" width="500" height="320" rx="12" fill="#0a1628" stroke="url(#usb1)" stroke-width="3"/>
+<rect x="15" y="15" width="470" height="280" rx="6" fill="#0f2040"/>
+<!-- Code lines on screen -->
+<rect x="35" y="40" width="180" height="8" rx="3" fill="url(#usb1)" opacity="0.7"/>
+<rect x="35" y="60" width="260" height="8" rx="3" fill="url(#usb1)" opacity="0.5"/>
+<rect x="35" y="80" width="140" height="8" rx="3" fill="url(#usb1)" opacity="0.6"/>
+<rect x="35" y="100" width="300" height="8" rx="3" fill="url(#glow1)" opacity="0.5"/>
+<rect x="35" y="120" width="200" height="8" rx="3" fill="url(#usb1)" opacity="0.4"/>
+<rect x="35" y="140" width="280" height="8" rx="3" fill="url(#glow1)" opacity="0.4"/>
+<rect x="35" y="160" width="100" height="8" rx="3" fill="url(#usb1)" opacity="0.3"/>
+<!-- Highlighted exfiltration indicator -->
+<rect x="30" y="185" width="420" height="65" rx="6" fill="rgba(255,100,100,0.15)" stroke="rgba(255,100,100,0.4)" stroke-width="1"/>
+<text x="45" y="210" fill="rgba(255,120,120,0.9)" font-family="monospace" font-size="14" font-weight="bold">USBSTOR\Disk&#38;Ven_Kingston&#38;Prod_DataTraveler</text>
+<text x="45" y="235" fill="rgba(255,200,80,0.8)" font-family="monospace" font-size="12">FILETIME: 2024-11-15T14:32:07.482109Z</text>
+<!-- More code lines -->
+<rect x="35" y="265" width="220" height="8" rx="3" fill="url(#usb1)" opacity="0.3"/>
+<rect x="35" y="282" width="160" height="8" rx="3" fill="url(#usb1)" opacity="0.2"/>
+<!-- Laptop base -->
+<path d="M-20,320 L0,320 L500,320 L520,320 L520,340 L-20,340 Z" fill="url(#usb1)" opacity="0.8"/>
+</g>
+<!-- USB device (center-right) -->
+<g transform="translate(700,220)">
+<!-- USB stick body -->
+<rect x="0" y="40" width="140" height="80" rx="10" fill="url(#glow1)"/>
+<rect x="0" y="40" width="140" height="80" rx="10" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+<!-- USB connector -->
+<rect x="140" y="55" width="40" height="50" rx="3" fill="#c0c0c0"/>
+<rect x="148" y="65" width="24" height="6" rx="1" fill="#888"/>
+<rect x="148" y="78" width="24" height="6" rx="1" fill="#888"/>
+<!-- LED indicator -->
+<circle cx="25" cy="72" r="6" fill="#00ff88" opacity="0.8"/>
+<!-- Label on USB -->
+<text x="70" y="75" fill="rgba(11,67,110,0.9)" font-family="sans-serif" font-size="11" text-anchor="middle" font-weight="bold">EXFILTRATION</text>
+<text x="70" y="90" fill="rgba(11,67,110,0.7)" font-family="sans-serif" font-size="9" text-anchor="middle">4.7 GB / 492 archivos</text>
+</g>
+<!-- Data flow arrows (laptop to USB) -->
+<g opacity="0.7">
+<line x1="610" y1="300" x2="695" y2="280" stroke="url(#glow1)" stroke-width="3" stroke-dasharray="10,6"/>
+<line x1="610" y1="320" x2="695" y2="290" stroke="url(#glow1)" stroke-width="2" stroke-dasharray="8,5"/>
+<line x1="610" y1="340" x2="695" y2="300" stroke="url(#glow1)" stroke-width="2" stroke-dasharray="8,5"/>
+<!-- Arrow heads -->
+<polygon points="695,275 695,285 710,280" fill="url(#glow1)"/>
+<polygon points="695,285 695,295 710,290" fill="url(#glow1)"/>
+</g>
+<!-- Forensic timeline (right side) -->
+<g transform="translate(900,100)">
+<!-- Timeline line -->
+<line x1="40" y1="60" x2="40" y2="450" stroke="url(#usb1)" stroke-width="3"/>
+<!-- Timeline nodes -->
+<circle cx="40" cy="80" r="12" fill="url(#glow1)" stroke="white" stroke-width="2"/>
+<text x="65" y="85" fill="white" font-family="sans-serif" font-size="14" font-weight="bold">Conexión USB detectada</text>
+<text x="65" y="102" fill="rgba(255,200,80,0.8)" font-family="monospace" font-size="11">USBSTOR → MountedDevices</text>
+
+<circle cx="40" cy="170" r="12" fill="url(#glow1)" stroke="white" stroke-width="2"/>
+<text x="65" y="175" fill="white" font-family="sans-serif" font-size="14" font-weight="bold">Inicio de copia</text>
+<text x="65" y="192" fill="rgba(255,200,80,0.8)" font-family="monospace" font-size="11">LNK FILETIME: μs precision</text>
+
+<circle cx="40" cy="260" r="12" fill="url(#glow1)" stroke="white" stroke-width="2"/>
+<text x="65" y="265" fill="white" font-family="sans-serif" font-size="14" font-weight="bold">Archivos exfiltrados</text>
+<text x="65" y="282" fill="rgba(255,200,80,0.8)" font-family="monospace" font-size="11">Jump Lists → 492 archivos</text>
+
+<circle cx="40" cy="350" r="12" fill="rgba(255,100,100,0.9)" stroke="white" stroke-width="2"/>
+<text x="65" y="355" fill="rgba(255,100,100,0.9)" font-family="sans-serif" font-size="14" font-weight="bold">Desconexión USB</text>
+<text x="65" y="372" fill="rgba(255,200,80,0.8)" font-family="monospace" font-size="11">Último LNK → fin de operación</text>
+
+<circle cx="40" cy="430" r="14" fill="#00cc66" stroke="white" stroke-width="2"/>
+<text x="65" y="420" fill="#00cc66" font-family="sans-serif" font-size="14" font-weight="bold">Evidencia forense</text>
+<text x="65" y="438" fill="rgba(255,200,80,0.8)" font-family="monospace" font-size="11">4 fuentes correlacionadas</text>
+</g>
+<!-- Magnifying glass (bottom overlay) -->
+<g transform="translate(1200,400)" opacity="0.15">
+<circle cx="0" cy="0" r="80" fill="none" stroke="white" stroke-width="8"/>
+<line x1="56" y1="56" x2="120" y2="120" stroke="white" stroke-width="12" stroke-linecap="round"/>
+</g>
+</svg>

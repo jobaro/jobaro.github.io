@@ -1,0 +1,44 @@
+# Seguridad Forense
+
+> Perito informático, consultoría y ciberseguridad en Córdoba y Andalucía, por José Baena Roca, Ingeniero en Informática colegiado (CPIIA nº 2020/323).
+
+Seguridad Forense es el sitio profesional de José Baena Roca, perito informático en Córdoba con más de 30 años de experiencia y colegiado en el Colegio Profesional de Ingenieros Informáticos de Andalucía (CPIIA nº 2020/323, DNI 52352009-F). Desde su oficina en Córdoba atiende casos en toda Andalucía —Jaén, Málaga, Sevilla, Granada, etc.— ofreciendo peritajes informáticos, pentesting, auditoría de seguridad, consultoría tecnológica, análisis forense de dispositivos y certificación de mensajería instantánea (WhatsApp, Telegram). El sitio incluye artículos de blog sobre casos reales, jurisprudencia aplicable y un canal de contacto directo.
+
+## Pages
+
+- https://seguridadforense.com/index.html: Inicio — Presentación de José Baena Roca, servicios destacados, proceso de peritaje (adquisición, análisis, informe, asistencia judicial), sentencias de jurisprudencia, FAQ y enlaces al blog.
+- https://seguridadforense.com/contact.html: Contacto — Datos de contacto: teléfono (+34 613 041 171), correo electrónico y dirección en C/ Historiador Manuel Salcines, 7, Córdoba (España).
+- https://seguridadforense.com/analisis-evidencias.html: Análisis de evidencias — Artículo sobre el papel del análisis de evidencias digitales en el ámbito jurídico y empresarial: reconstrucción de eventos, validación de pruebas electrónicas, cumplimiento normativo, ciberseguridad y ética en la investigación.
+- https://seguridadforense.com/mensajeria.html: Mensajería — Artículo sobre la vulnerabilidad de los pantallazos en mensajería instantánea (WhatsApp, Telegram): falta de validez legal, facilidad de manipulación, ausencia de sello de integridad, y necesidad de certificación pericial.
+- https://seguridadforense.com/pentesting.html: Pentesting y Auditoría de Seguridad — Página de servicio dedicada a pentesting y auditoría de seguridad.
+- https://seguridadforense.com/consultoria.html: Consultoría Informática — Servicio de asesoramiento tecnológico profesional para empresas y particulares en Córdoba: análisis de necesidades, selección de equipos, infraestructura, migración de sistemas e implementación de medidas de seguridad.
+- https://seguridadforense.com/robo-informacion.html: Robo de información por empleados — Servicio de detección forense de fugas de información por empleados desleales: análisis de dispositivos, registros de acceso, movimientos de archivos, conexiones USB, envíos de correo y elaboración de informe pericial para tribunales.
+- https://seguridadforense.com/exfiltracion-usb.html: Exfiltración de datos por USB — Caso real de reconstrucción forense de una exfiltración corporativa mediante artefactos Windows (Jump Lists, LNK files, USBSTOR, MountedDevices, MFT/NTFS): cronología con precisión de microsegundos, atribución de usuario, metodología ISO/IEC 27037, UNE 71506, UNE 197010, ISO/IEC 27042, y herramientas open source.
+- https://seguridadforense.com/estafa-bancaria.html: Estafa bancaria — Análisis forense de una estafa real a partir de dos capturas de pantalla y registro de SMS: descripción del guión del estafador, ingeniería social, secuencia de mensajes fraudulentos, uso de códigos reales del banco y extracción de conclusiones forenses.
+- https://seguridadforense.com/importancia-whatsapp.html: Importancia WhatsApp en los Procedimientos Judiciales — Análisis de la validez de las conversaciones de WhatsApp en juicios, sentencias del Tribunal Superior de Justicia de Madrid, cuándo son aceptadas como prueba y la necesidad de acreditar autenticidad e integridad.
+- https://seguridadforense.com/pericia-ambito-laboral.html: Peritaje en ámbito laboral — Importancia de los peritajes informáticos en despidos laborales: revisión de comunicaciones, políticas internas, acceso indebido a datos, recuperación de datos eliminados y determinación de la improcedencia.
+- https://seguridadforense.com/primera-condena-fakes.html: Primera condena por fakes — Noticia sobre la primera condena en España por difundir noticias falsas (fake news): caso de un guardia civil en 2022, agresión atribuida falsamente a menas, condena de 15 meses de prisión, multa y cierre de redes sociales.
+- https://seguridadforense.com/que-es-informatica-forense.html: ¿Qué es la informática forense? — Definición, importancia y casos de intervención de un perito forense: recopilación y autenticación de evidencias, dispositivos y nube, delitos informáticos, certificación de mensajería, manipulación de imágenes y pruebas digitales.
+- https://seguridadforense.com/mensajes-whatsapp.html: Los mensajes de WhatsApp no se acreditan con un acta notarial — Explicación sobre por qué las actas notariales no garantizan la autenticidad de conversaciones de WhatsApp, facilidad de falsificación mediante aplicaciones y herramientas, y recomendación de acreditar veracidad mediante informe pericial informático.
+- https://seguridadforense.com/privacy-policy.html: Política de privacidad — Política de privacidad conforme al RGPD y la LOPD GDD: identidad del responsable, principios de tratamiento, derechos del interesado, cookies, Google Analytics, destinatarios y conservación de datos.
+- https://seguridadforense.com/aviso-legal.html: Aviso legal — Información legal del sitio: identificación del titular, condiciones de uso, propiedad intelectual, limitación de responsabilidad, legislación aplicable y contacto.
+- https://seguridadforense.com/politica-cookies.html: Política de cookies — Información sobre el uso de cookies: definición, finalidad, tipos (técnicas, análisis, personalización, publicitarias), gestión por navegador y enlaces a políticas de terceros.
+
+## Services
+
+- Análisis forense de evidencias digitales: Recopilación, preservación, análisis y documentación de evidencias de dispositivos electrónicos (móviles, ordenadores, routers, nube) para su uso en procedimientos judiciales, cumpliendo normativas ISO y cadena de custodia.
+- Peritaje informático (ámbito laboral y civil): Informes periciales y defensa ante tribunales en casos de despido improcedente, revisión de comunicaciones digitales, acceso indebido a datos, recuperación de información eliminada y contraperitajes.
+- Pentesting y auditoría de seguridad: Identificación de vulnerabilidades en sistemas informáticos mediante pruebas de intrusión y auditorías de seguridad para empresas y particulares en Córdoba y toda España.
+- Consultoría informática: Asesoramiento tecnológico independiente para empresas y particulares: selección de equipos, infraestructura de red, migración de sistemas, implementación de medidas de seguridad y optimización de procesos informáticos.
+- Robo de información por empleados: Detección forense de fugas de datos por empleados desleales mediante análisis de registros de acceso, dispositivos USB, envíos de correo, accesos a plataformas cloud y elaboración de informe pericial para tribunales.
+- Exfiltración de datos por USB: Reconstrucción forense de sustracciones de información mediante dispositivos USB, correlacionando artefactos del sistema (Jump Lists, LNK, registro USBSTOR, MFT) incluso sin disponer del dispositivo destino.
+- Peritaje de mensajería (WhatsApp, Telegram): Certificación pericial de conversaciones de mensajería instantánea: demostración de autenticidad, integridad y ausencia de manipulación, evitando la invalidez de capturas de pantalla.
+
+## FAQ
+
+- ¿Cómo solicitar un informe pericial?: Fácilmente, simplemente contacta conmigo y te asesoraré sobre lo mejor en tu caso. Con absoluta confidencialidad.
+- ¿Quién puede hacer un peritaje?: Según la ley el peritaje debe ser realizado por un experto en la materia a tratar; un ingeniero informático ofrece las garantías necesarias.
+- ¿Cómo contactar conmigo?: Puedes llamarme, mandar un WhatsApp o escribir un correo. En la página podrás encontrar cómo hacerlo. Fácil y totalmente confidencial.
+- ¿Unos pantallazos de WhatsApp son válidos?: No, para poder asegurar que unos mensajes de WhatsApp son válidos se necesita un informe de un perito informático.
+- ¿Cuánto vale un peritaje informático?: Un peritaje informático no tiene un precio fijo ya que varía mucho de un caso a otro, pero puedo hacerte un presupuesto en 24 horas y con absoluta confidencialidad.
+- Si sospecho que un empleado ha robado información, ¿es posible demostrarlo?: Todas las actuaciones dejan rastro en los equipos que manejamos; mediante el análisis podemos obtener todos los pasos que ha dado el empleado en las fechas clave.
