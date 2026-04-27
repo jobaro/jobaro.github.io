@@ -1,5 +1,84 @@
-# robots.txt generado por atecnis.com
+# robots.txt for seguridadforense.com
+# Professional digital forensics expert site (Spanish)
+# Hosted on GitHub Pages — 17 static HTML pages
+
+# ============================================================
+# GENERAL POLICY
+# ============================================================
+# Default rule: allow all crawlable content.
 User-agent: *
-Disallow: 
+Allow: /
 Disallow: /cgi-bin/
+Crawl-delay: 10
+
+# ============================================================
+# MAJOR SEARCH ENGINE CRAWLERS
+# ============================================================
+# Explicit allow for Google, Bing, Yahoo, DuckDuckGo, Yandex,
+# Baidu, Naver and other major indexes.
+User-agent: Googlebot
+Allow: /
+Disallow: /cgi-bin/
+
+User-agent: Googlebot-Image
+Allow: /
+Disallow: /cgi-bin/
+
+User-agent: bingbot
+Allow: /
+Disallow: /cgi-bin/
+
+User-agent: Slurp
+Allow: /
+Disallow: /cgi-bin/
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /cgi-bin/
+
+User-agent: YandexBot
+Allow: /
+Disallow: /cgi-bin/
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /cgi-bin/
+
+User-agent: NaverBot
+Allow: /
+Disallow: /cgi-bin/
+
+# ============================================================
+# AI CRAWLERS — EXPLICITLY ALLOWED
+# ============================================================
+# This site WANTS AI crawlers to index its professional content.
+# No Disallow rules for any AI bot.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# ============================================================
+# SITEMAP
+# ============================================================
 Sitemap: https://seguridadforense.com/sitemap.xml
